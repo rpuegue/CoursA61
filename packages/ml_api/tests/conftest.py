@@ -6,6 +6,7 @@ sys.path.append("./")
 from api.app import create_app
 from api.config import TestingConfig
 
+
 @pytest.fixture
 def app():
     app = create_app(config_object=TestingConfig)
